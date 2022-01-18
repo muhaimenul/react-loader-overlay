@@ -1,4 +1,3 @@
-import './App.css';
 import { Loader } from "./lib";
 function App() {
   return (

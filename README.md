@@ -1,5 +1,5 @@
 # react-loader-overlay
-A customizable, simple loading overlay with spinner and transitions for React applications.
+A simple loading overlay with spinner and transitions for React applications.
 
 
 ## Installation
