@@ -9,7 +9,8 @@
     "loader",
     "overlay",
     "progressbar",
-    "preloader"
+    "preloader",
+    "spinner"
   ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
