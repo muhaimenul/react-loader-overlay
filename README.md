@@ -8,6 +8,11 @@ Install using `npm`
 ```
 npm install react-loader-overlay --save
 ```
+or
+
+```bash
+yarn add react-loader-overlay --save
+```
 
 ## Usage:
 
