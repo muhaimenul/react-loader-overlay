@@ -1,7 +1,16 @@
 {
   "name": "react-preloader",
   "version": "0.1.0",
+  "description": "A react package for pre loader with overlay.",
   "private": true,
+  "author": "Muhaimenul Islam <muhaimenulislam@iut-dhaka.edu> (https://github.com/muhaimenul)",
+  "keywords": [
+    "react",
+    "loader",
+    "overlay",
+    "progressbar",
+    "preloader"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -16,6 +25,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muhaimenul/react-loader-overlay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muhaimenul/react-loader-overlay/issues"
   },
   "eslintConfig": {
     "extends": [
