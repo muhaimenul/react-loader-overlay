@@ -1,8 +1,8 @@
 {
-  "name": "react-preloader",
+  "name": "react-loader-overlay",
   "version": "0.1.0",
   "description": "A react package for pre loader with overlay.",
-  "private": true,
+  "private": false,
   "author": "Muhaimenul Islam <muhaimenulislam@iut-dhaka.edu> (https://github.com/muhaimenul)",
   "keywords": [
     "react",
@@ -13,7 +13,14 @@
     "spinner",
     "loading",
     "fade",
+    "components",
     "transition"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
   ],
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
@@ -27,7 +34,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
