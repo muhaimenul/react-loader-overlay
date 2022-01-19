@@ -1,4 +1,6 @@
+import './App.css';
 import { Loader } from "./lib";
+
 function App() {
   return (
     <div className="App">
