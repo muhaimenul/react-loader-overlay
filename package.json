@@ -1,6 +1,6 @@
 {
   "name": "react-loader-overlay",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "A react package for pre loader with overlay.",
   "private": false,
   "author": "Muhaimenul Islam <muhaimenulislam@iut-dhaka.edu> (https://github.com/muhaimenul)",
@@ -46,7 +46,7 @@
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "wpbuild": "rm -rf dist && webpack --mode production",
-    "rlbuild": "rollup -c",
+    "rlbuild": "rm -rf dist && rollup -c",
     "rlstart": "rollup -c -w",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -88,9 +88,8 @@
     "rollup": "^2.66.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-styles": "^4.0.0",
-    "rollup-plugin-typescript2": "^0.31.1",
     "style-loader": "^3.3.1",
     "typescript": "^4.5.5",
     "url-loader": "^4.1.1",

@@ -1,7 +1,5 @@
-import sass from 'rollup-plugin-styles'
-// import typescript from 'rollup-plugin-typescript2'
 import babel from 'rollup-plugin-babel';
-import commonjs from 'rollup-plugin-commonjs';
+import postcss from 'rollup-plugin-postcss';
 
 import pkg from './package.json'
 
@@ -17,12 +15,13 @@ export default {
     }
   ],
   plugins: [
-    sass({ insert: true }),
+    postcss({
+      extensions: ['.css'],
+    }),
     babel({
       exclude: 'node_modules/**',
       presets: ['@babel/env', '@babel/preset-react']
     }),
-    commonjs()
   ],
   external: ['react', 'react-dom']
 }
