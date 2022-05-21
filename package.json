@@ -1,0 +1,99 @@
+{
+  "name": "react-loader-overlay",
+  "version": "1.0.0",
+  "description": "A react package for pre loader with overlay.",
+  "private": false,
+  "author": "Muhaimenul Islam <muhaimenulislam@iut-dhaka.edu> (https://github.com/muhaimenul)",
+  "keywords": [
+    "react",
+    "loader",
+    "overlay",
+    "progressbar",
+    "preloader",
+    "spinner",
+    "loading",
+    "fade",
+    "components",
+    "transition"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "style": "dist/components/Loading.module.css",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "wpbuild": "rm -rf dist && webpack --mode production",
+    "rlbuild": "rm -rf dist && rollup -c",
+    "rlstart": "rollup -c -w",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muhaimenul/react-loader-overlay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muhaimenul/react-loader-overlay/issues"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "rollup": "^2.66.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-styles": "^4.0.0",
+    "style-loader": "^3.3.1",
+    "typescript": "^4.5.5",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
